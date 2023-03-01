@@ -1,5 +1,11 @@
 #!/bin/bash
 
+####
+## extract the interesting section sizes for easy comparison
+## from the output of readpe and display in a table
+
+## readpe -S <pe file> | ./readpe_sections.sh
+
 cat - | awk 'BEGIN {
 	print "section,virtual size,raw size"
 }
